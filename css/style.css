@@ -26,6 +26,7 @@ a:hover {
 
 img {
     width: 100%;
+    display: block;
 }
 /* GENERAL */
 
@@ -77,7 +78,7 @@ body {
 }
 
 .gap-navbar {
-    gap: 30px;
+    gap: 20px;
 }
 
 .gap-card {
@@ -116,7 +117,7 @@ body {
     z-index: 1000;
     position: fixed;
     top: 0;
-    left: 200px;
+    left: 260px;
     width: calc(100% - 200px);
 }
 
@@ -128,7 +129,7 @@ body {
 /* MAIN */
 
 main {
-    width: calc(100% - 200px);
+    width: calc(100% - 260px);
     background-color:var(--color-bg-primary);
     padding: 100px 20px 20px 20px;
     overflow-y: auto;
@@ -138,30 +139,28 @@ main {
 
 .navbar ul {
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 /* SECTION ROW-1 */
 
+.card {
+    width: calc((100% / 6) - 15px);
+    padding: 30px 0;
+}
+
 .row h2 {
     color: var(--color-light);
     padding: 10px 0;
+    font-size: 1.6em;
 }
 
-.card {
-    width: calc((100% / 6) - 15px);
-    padding: 20px 0;
-}
-
-.card img {
-    padding: 10px 0;
-}
-
-.card h3 {
+.row h3 {
     color: var(--color-light);
     font-size: 1.2em;
     line-height: 1em;
     text-align: center;
+    padding: 10px 0 0 0;
 }
 
 .row h4 {
@@ -171,12 +170,17 @@ main {
 
 /* SECTION ROW-2 */
 
+/* SECTION ROW-3 */
 
+.circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /* ID SPECIFIC */
 
 #sidebar {
-    width: 200px;
+    width: 260px;
     height: 100%;
     background-color: var(--color-sidebar);
 }
