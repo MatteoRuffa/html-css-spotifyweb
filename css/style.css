@@ -202,3 +202,15 @@ main {
     }
     
 }
+
+@media screen and (max-width: 768px) {
+    /* SECTION ROW-1 */
+    
+    .card {
+        width: calc((100% / 2) - 15px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+}
