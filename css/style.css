@@ -24,10 +24,14 @@ a:hover {
     border: 1px solid red;
 }
 
+img {
+    width: 100%;
+}
 /* GENERAL */
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 :root {
@@ -41,8 +45,11 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
+}
+
+.container {
+    width: 100%;
 }
 
 /* UTILITY */
@@ -50,6 +57,15 @@ body {
 /* flex */
 .d-flex {
     display: flex;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .align-items {
@@ -64,18 +80,32 @@ body {
     gap: 30px;
 }
 
+.gap-card {
+    gap: 10px;
+}
+
+.gap-card-container {
+    gap: 15px;
+}
+
 /* text */
+
+.text-center {
+    text-align: center;
+}
+
 .text-contrast {
     color: var(--color-contrast-text);
     font-weight: 700;
 }
+
 
 /****** PAGE ******/
 
 .content {
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--color-bg-primary);
 }
 
 /* HEADER */
@@ -104,12 +134,38 @@ main {
     overflow-y: auto;
 }
 
-/* NAVBAR */
+/* SECTION NAVBAR */
 
 .navbar ul {
     text-transform: uppercase;
 }
 
+/* SECTION ROW-1 */
+
+.row h2 {
+    color: var(--color-light);
+    padding: 20px 0;
+}
+
+.card {
+    width: calc((100% / 6) - 15px);
+}
+
+.card img {
+    padding: 10px 0;
+}
+
+.card h3 {
+    color: var(--color-light);
+    font-size: 1.2em;
+    line-height: 1em;
+    text-align: center;
+}
+
+.card h4 {
+    color: var(--color-contrast-text);
+    font-size: 1em;
+}
 /* ID SPECIFIC */
 
 #sidebar {
