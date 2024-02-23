@@ -104,7 +104,7 @@ body {
 /****** PAGE ******/
 
 .content {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
     width: 100%;
     background-color: var(--color-bg-primary);
 }
@@ -113,7 +113,7 @@ body {
 
 .header {
     background-color: #0000004f;
-    height: 80px;
+    height: 100px;
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -131,7 +131,7 @@ body {
 main {
     width: calc(100% - 260px);
     background-color:var(--color-bg-primary);
-    padding: 100px 20px 20px 20px;
+    padding: 120px 20px 20px 20px;
     overflow-y: auto;
 }
 
@@ -151,13 +151,13 @@ main {
 
 .row h2 {
     color: var(--color-light);
-    padding: 10px 0;
+    padding: 20px 0 10px 0 ;
     font-size: 1.6em;
 }
 
 .row h3 {
     color: var(--color-light);
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1em;
     text-align: center;
     padding: 10px 0 0 0;
@@ -165,7 +165,7 @@ main {
 
 .row h4 {
     color: var(--color-contrast-text);
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 /* SECTION ROW-2 */
@@ -187,7 +187,7 @@ main {
 
 #toolbar {
     background-color: var(--color-bg-secondary);
-    height: 90px;
+    height: 100px;
 }
 
 /* RESPONSIVE SOLUCIONS */
