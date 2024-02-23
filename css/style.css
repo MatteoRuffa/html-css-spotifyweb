@@ -194,23 +194,24 @@ body {
 }
 
 .user {
-    
-}
-
-.user {
     background-color: var(--color-contrast-text);
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     width: 15%;
-    margin: 15px 15px 0 0;
 }
 
 .user img {
     object-fit: cover; 
 }
 
+.bottom div:last-child {
+    margin-top: 10px;
+}
 
+.bottom span:last-child {
+    margin-left: 15px;
+}
 
 /* MAIN */
 
