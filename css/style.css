@@ -1,0 +1,102 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+/* GENERAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-bg-primary: #141922;
+    --color-bg-secondary: #282828;
+    --color-sidebar: #000000;
+    --color-light: #FFFFFF;
+    --color-contrast-text: #7D7F84;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/* UTILITY */
+
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+/****** PAGE ******/
+
+.content {
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+/* HEADER */
+
+.header {
+    background-color: #0000004f;
+    height: 80px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+}
+
+.wrapper {
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+/* MAIN */
+
+main {
+    width: calc(100% - 200px);
+    background-color:var(--color-bg-primary);
+    padding: 100px 20px 20px 20px;
+    overflow-y: auto;
+}
+
+/* ID SPECIFIC */
+
+#sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: var(--color-sidebar);
+}
+
+#toolbar {
+    background-color: var(--color-bg-secondary);
+    height: 90px;
+}
+
+/* RESPONSIVE SOLUCIONS */
