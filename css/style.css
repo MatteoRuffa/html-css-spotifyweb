@@ -85,6 +85,10 @@ body {
     justify-content: flex-end;
 }
 
+.space-btw {
+    justify-content: space-between;
+}
+
 .gap-navbar {
     gap: 20px;
 }
@@ -106,6 +110,10 @@ body {
 .text-contrast {
     color: var(--color-contrast-text);
     font-weight: 700;
+}
+
+.text-light {
+    color: var(--color-light);
 }
 
 
@@ -151,11 +159,8 @@ body {
 
 /* SIDEBAR */
 
-#sidebar img {
+.logo img {
     width: 70%;
-}
-
-#sidebar div:first-child {
     padding-bottom: 20px;
 }
 
@@ -179,6 +184,33 @@ body {
 #sidebar li {
     padding: 10px 0;
 }
+
+#download img {
+    width: 8%;
+}
+
+#download span {
+    font-size: 0.8em;
+}
+
+.user {
+    
+}
+
+.user {
+    background-color: var(--color-contrast-text);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    width: 15%;
+    margin: 15px 15px 0 0;
+}
+
+.user img {
+    object-fit: cover; 
+}
+
+
 
 /* MAIN */
 
@@ -229,6 +261,7 @@ main {
 .circle {
     border-radius: 50%;
     overflow: hidden;
+    object-fit: cover;
 }
 
 /* ID SPECIFIC */
@@ -237,15 +270,23 @@ main {
     width: 260px;
     height: 100%;
     background-color: var(--color-sidebar);
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     font-weight: 500;
     color: var(--color-contrast-text);
 }
+
+#download {
+    border-bottom: 1px solid var(--color-contrast-text);
+    padding-bottom: 8px;
+}
+
 
 #toolbar {
     background-color: var(--color-bg-secondary);
     height: 100px;
 }
+
+
 
 /* RESPONSIVE SOLUCIONS */
 
