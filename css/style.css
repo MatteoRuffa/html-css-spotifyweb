@@ -32,7 +32,6 @@ img {
 
 html {
     scroll-behavior: smooth;
-    
 }
 
 :root {
@@ -198,7 +197,7 @@ body {
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    width: 15%;
+    width: 12%;
 }
 
 .user img {
