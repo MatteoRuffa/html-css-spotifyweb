@@ -138,7 +138,7 @@ body {
     z-index: 1000;
     position: fixed;
     top: 0;
-    left: 260px;
+    left: 200px;
     width: calc(100% - 200px);
 }
 
@@ -163,11 +163,21 @@ body {
     padding-bottom: 20px;
 }
 
-#sidebar i.fa-solid {
+.logo-small {
+    display: none;
+    width: 22%;
+    padding-bottom: 20px;
+}
+
+#sidebar .icons ul img {
+    width: 20%;
+}
+
+/* #sidebar i.fa-solid {
     color: var(--color-contrast-text);
     font-size: 1.5em;
     padding: 5px 5px 5px 0;
-}
+} */
 
 #sidebar i.fa-solid.fa-square-plus {
     font-size: 3em;
@@ -177,15 +187,23 @@ body {
     color: var(--color-light);
     text-transform: uppercase;
     font-size: 1em;
-    padding-top: 20px;
+    padding: 20px 0 10px 0;
+}
+
+#sidebar .playlist span {
+    padding: 10px 0 10px 10px;
 }
 
 #sidebar li {
-    padding: 10px 0;
+    padding: 5px 0;
+}
+
+#sidebar .playlist-items {
+    min-height: 0;
 }
 
 #download img {
-    width: 8%;
+    width: 10%;
 }
 
 #download span {
@@ -197,7 +215,7 @@ body {
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    width: 12%;
+    width: 15%;
 }
 
 .user img {
@@ -215,7 +233,7 @@ body {
 /* MAIN */
 
 main {
-    width: calc(100% - 260px);
+    width: calc(100% - 200px);
     background-color:var(--color-bg-primary);
     padding: 120px 20px 20px 20px;
     overflow-y: auto;
@@ -267,12 +285,13 @@ main {
 /* ID SPECIFIC */
 
 #sidebar {
-    width: 260px;
+    width: 200px;
     height: 100%;
     background-color: var(--color-sidebar);
     padding: 20px 20px 10px 20px;
     font-weight: 500;
     color: var(--color-contrast-text);
+    overflow-y: hidden;
 }
 
 #download {
@@ -284,6 +303,7 @@ main {
 #toolbar {
     background-color: var(--color-bg-secondary);
     height: 100px;
+    width: 100%;
 }
 
 
@@ -310,5 +330,65 @@ main {
 }
 
 @media screen and (max-width: 560px) {
+    .header {
+        left: 70px;
+         width: calc(100% - 70px);
+    }
 
+    .btn {
+        display: none;
+    }
+
+    #sidebar {
+        width: 70px;
+        padding: 0;
+    }
+
+    #sidebar .logo-small {
+        display: block;
+        width: 85%;
+        padding: 20px 5px 20px 20px;
+    }
+   
+    #sidebar .logo {
+        display: none;
+    }
+
+    #sidebar div.icons ul li span {
+        display: none;
+    }
+
+    #sidebar div.icons ul li img {
+        width: 75%;
+        padding-left:  20px;
+    }
+
+    #sidebar .playlist {
+        display: none;
+    }
+
+    #sidebar .bottom span {
+        display: none;
+    }
+
+    #download {
+        border-bottom: 0px solid var(--color-contrast-text);
+    }
+
+    #download img {
+        width:50%;
+        padding-left: 20px;
+    }
+
+    #profile  {
+        padding: 0 0 10px 20px;
+    }
+
+    #profile .user {
+        width: 50%;
+    }
+
+    main {
+        width: calc(100% - 70px);
+    }
 }
