@@ -186,6 +186,22 @@ body {
     padding: 20px 0 10px 0;
 }
 
+
+.icons ul li {
+    border-left: 3px solid transparent;
+}
+
+a:hover,
+nav .active,
+#sidebar .active {
+    color: var(--color-light);
+}
+
+.icons ul li.active,
+.icons ul li:hover {
+    border-left: 3px solid var(--color-select);
+}
+
 #sidebar .playlist span {
     padding: 10px 0 10px 10px;
 }
