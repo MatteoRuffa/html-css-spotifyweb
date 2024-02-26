@@ -166,13 +166,13 @@ body {
 
 .logo img {
     width: 70%;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 20px;
 }
 
 .logo-small {
     display: none;
     width: 22%;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 20px;
 }
 
 #sidebar .icons ul img {
@@ -183,31 +183,39 @@ body {
     font-size: 3em;
 }
 
-#sidebar h3 {
-    color: var(--color-light);
-    text-transform: uppercase;
-    font-size: 1em;
-    padding: 20px 0 10px 0;
-}
-
-
-.icons ul li {
+#sidebar .icons ul li {
     border-left: 3px solid transparent;
+    padding: 0px 0px 10px 20px;
 }
 
 a:hover,
 nav .active,
-#sidebar .active {
+#sidebar .icons ul li.active  {
     color: var(--color-light);
 }
 
-.icons ul li.active,
-.icons ul li:hover {
+#sidebar .icons ul li.active ,
+#sidebar .icons ul li:hover {
     border-left: 3px solid var(--color-select);
 }
 
+#sidebar h3 {
+    color: var(--color-light);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 20px 0 10px 20px;
+}
+
+.add-playlist {
+    padding: 0 0 10px 20px;
+}
+
+#sidebar .playlist ul {
+    padding-left: 20px;
+}
+
 #sidebar .playlist span {
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 20px;
 }
 
 #sidebar li {
@@ -238,6 +246,9 @@ nav .active,
     object-fit: cover; 
 }
 
+.bottom {
+    padding: 0 20px 10px 20px;
+}
 .bottom div:last-child {
     margin-top: 10px;
 }
@@ -355,7 +366,6 @@ nav a:hover::after {
 }
 
 #toolbar .title span:last-child {
-    color: var(--color-contrast-text);
     font-size: 0.8em;
     font-weight: 500;
 }
@@ -412,6 +422,17 @@ i.fa-regular.fa-circle-play:hover {
     border: 2px solid var(--color-light);
     width: 40px;
     border-radius: 3px;
+    position: relative;
+}
+
+#toolbar .volume:hover .volume1 {
+    border-color: var(--color-select);
+    content: '\f111';
+    font-family: 'Font Awesome 6 free';
+    font-size: 4em;
+    position: absolute;
+    top: 0;
+    left: 40px;
 }
 
 #toolbar .volume2 {
@@ -430,7 +451,7 @@ i.fa-regular.fa-circle-play:hover {
     width: 200px;
     height: 100%;
     background-color: var(--color-sidebar);
-    padding: 20px 20px 10px 20px;
+    /* padding: 20px 0px 10px 20px; */
     font-weight: 500;
     color: var(--color-contrast-text);
     overflow-y: hidden;
@@ -529,7 +550,6 @@ i.fa-regular.fa-circle-play:hover {
 
     #sidebar div.icons ul li img {
         width: 75%;
-        padding-left:  20px;
     }
 
     #sidebar .playlist {
@@ -541,20 +561,15 @@ i.fa-regular.fa-circle-play:hover {
     }
 
     #download {
-        border-bottom: 0px solid var(--color-contrast-text);
+        border-bottom: 1px solid var(--color-contrast-text);
     }
 
     #download img {
         width:50%;
-        padding-left: 20px;
-    }
-
-    #profile  {
-        padding: 0 0 10px 20px;
     }
 
     #profile .user {
-        width: 50%;
+        width: 80%;
     }
 
     main {
