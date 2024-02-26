@@ -314,7 +314,7 @@ main {
 }
 
 #toolbar .center {
-    flex-grow: 1;
+    width: 50%;
     color: var(--color-light);
 }
 
@@ -435,9 +435,13 @@ main {
 }
 
 @media screen and (max-width: 568px) {
+    .wrapper {
+       min-width: 400px;
+    }
+
     .header {
         left: 70px;
-         width: calc(100% - 70px);
+        width: calc(100% - 70px);
     }
 
     .btn {
@@ -497,11 +501,15 @@ main {
         width: calc(100% - 70px);
     }
 
+    #toolbar .left div:last-child {
+        padding-left: 0px;
+    }
+
     #toolbar .bar1 {
         width: 20px;
     }
     
     #toolbar .bar2 {
-        width: 100px;
+        width: 60px;
     }
 }
