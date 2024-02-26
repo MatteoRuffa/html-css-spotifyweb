@@ -158,6 +158,10 @@ body {
     font-weight: 700;
 }
 
+.btn:hover {
+    scale: 1.1;
+}
+
 /* SIDEBAR */
 
 .logo img {
@@ -267,11 +271,6 @@ nav a::after {
     background-color: transparent;
 }
 
-a:hover,
-nav .active {
-    color: var(--color-light);
-}
-
 nav a.active::after,
 nav a:hover::after {
     background-color: var(--color-select);
@@ -373,6 +372,10 @@ nav a:hover::after {
 #toolbar .center {
     width: 50%;
     color: var(--color-light);
+}
+
+i.fa-regular.fa-circle-play:hover {
+    scale: 1.2;
 }
 
 #toolbar .time span {
