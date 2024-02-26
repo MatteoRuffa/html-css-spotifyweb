@@ -47,6 +47,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 80%;
 }
 
 .container {
@@ -280,7 +281,7 @@ main {
 /* TOOLBAR */
 
 #toolbar div.left img {
-    width: 14%;
+    width: 12%;
 }
 
 #toolbar .left {
@@ -359,6 +360,10 @@ main {
     width: 100px;
 }
 
+#toolbar .volume-icon {
+    display: none;
+    color: var(--color-light);
+}
 /* ID SPECIFIC */
 
 #sidebar {
@@ -392,6 +397,14 @@ main {
     .card {
         width: calc((100% / 4) - 15px);
     }
+
+    #toolbar .bar1 {
+        width: 60px;
+    }
+    
+    #toolbar .bar2 {
+        width: 200px;
+    }
     
 }
 
@@ -399,9 +412,26 @@ main {
     .card {
         width: calc((100% / 2) - 15px);
     }
+
+    #toolbar .bar1 {
+        width: 30px;
+    }
+    
+    #toolbar .bar2 {
+        width: 120px;
+    }
+
+    #toolbar .right {
+        display: none;
+    }
+    
+    #toolbar .volume-icon {
+        display: inline-block;
+        padding: 20px;
+    }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 568px) {
     .header {
         left: 70px;
          width: calc(100% - 70px);
@@ -462,5 +492,13 @@ main {
 
     main {
         width: calc(100% - 70px);
+    }
+
+    #toolbar .bar1 {
+        width: 20px;
+    }
+    
+    #toolbar .bar2 {
+        width: 100px;
     }
 }
