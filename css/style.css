@@ -116,6 +116,9 @@ body {
     color: var(--color-light);
 }
 
+.text-weight-light {
+    font-weight: 300;
+}
 
 /****** PAGE ******/
 

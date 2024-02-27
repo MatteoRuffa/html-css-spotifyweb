@@ -9,6 +9,12 @@
     --color-logo: #1ED760;
 }
 
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 /* MAIN */
 
 .main-row {
@@ -47,6 +53,65 @@
 }
 
 .icons-2 i.fa-regular.fa-heart,
-.icons-2 i.fa-solid.fa-ellipsis  {
+.icons-2 i.fa-solid.fa-ellipsis {
     font-size: 2em;
+}
+
+.table {
+    color: var(--color-light);
+}
+
+.grid-container {
+    border-bottom: 1px solid var(--color-bar);
+    padding: 10px 0;
+}
+
+.items1 {
+    width: 5%;
+    cursor: pointer;
+}
+
+.items1b {
+    display: none;
+}
+
+.items1:hover .items1a  {
+    display: none;
+}
+
+.items1:hover .items1b {
+    display: block;
+} 
+
+.items2 {
+    width: 35%;
+}
+
+.items3 {
+    width: 30%;
+}
+
+.items4 {
+    width: 25%;
+}
+
+.items5 {
+    width: 5%;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.items2 img {
+    width: 15%;
+    padding-right: 10px;
+}
+
+.items2 span:last-child {
+    font-size: 0.8em;
 }
