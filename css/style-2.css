@@ -36,3 +36,17 @@
     font-size: 1.5em;
     margin-right: 5px;
 }
+
+.icons-2 {
+    padding: 20px;
+}
+
+.icons-2 i.fa-solid.fa-circle-play {
+    color: var(--color-logo);
+    font-size: 3em;
+}
+
+.icons-2 i.fa-regular.fa-heart,
+.icons-2 i.fa-solid.fa-ellipsis  {
+    font-size: 2em;
+}
