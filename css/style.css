@@ -1,5 +1,4 @@
 /* RESET */
-
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +26,7 @@ img {
     width: 100%;
     display: block;
 }
+
 /* GENERAL */
 
 html {
@@ -47,7 +47,6 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    
 }
 
 .container {
@@ -209,7 +208,6 @@ nav .active,
 .add-playlist {
     padding: 0 0 10px 20px;
 }
-
 
 #sidebar .playlist {
     min-height: 0px;

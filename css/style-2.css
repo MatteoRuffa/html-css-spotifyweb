@@ -1,0 +1,38 @@
+:root {
+    --color-bg-primary: #141922;
+    --color-bg-secondary: #282828;
+    --color-sidebar: #000000;
+    --color-light: #FFFFFF;
+    --color-contrast-text: #7D7F84;
+    --color-bar: #5A5A5A;
+    --color-select: #A2EF2E;
+    --color-logo: #1ED760;
+}
+
+/* MAIN */
+
+.main-row {
+    padding: 20px;
+    color: var(--color-light);
+}
+
+.info h2 {
+    font-size: 4em;
+    padding: 10px 0;
+}
+
+.info span:first-child {
+    font-size: 0.9em;
+}
+
+.text-comment {
+    color: var(--color-contrast-text);
+    font-size: 0.9em; 
+    padding: 10px 0;
+}
+
+.info i.fa-brands.fa-spotify {
+    color: var(--color-logo);
+    font-size: 1.5em;
+    margin-right: 5px;
+}
