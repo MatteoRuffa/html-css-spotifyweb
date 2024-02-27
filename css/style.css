@@ -218,8 +218,24 @@ nav .active,
 
 #sidebar div.playlist ul {
     padding-left: 20px;
-    height: calc(100% - 10px);
+    height: 200px;
     overflow: auto;
+}
+
+#scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+
+#scrollbar::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #363636;
 }
 
 #sidebar .playlist span {
