@@ -210,8 +210,16 @@ nav .active,
     padding: 0 0 10px 20px;
 }
 
-#sidebar .playlist ul {
+
+#sidebar .playlist {
+    min-height: 0px;
+    height: 100%;
+}
+
+#sidebar div.playlist ul {
     padding-left: 20px;
+    height: calc(100% - 10px);
+    overflow: auto;
 }
 
 #sidebar .playlist span {
@@ -222,8 +230,8 @@ nav .active,
     padding: 5px 0;
 }
 
-#sidebar .playlist-items {
-    min-height: 0;
+#sidebar .bottom {
+    height: 80px;
 }
 
 #download img {
@@ -491,7 +499,7 @@ i.fa-regular.fa-circle-play:hover {
     /* padding: 20px 0px 10px 20px; */
     font-weight: 500;
     color: var(--color-contrast-text);
-    overflow-y: hidden;
+    
 }
 
 #download {
